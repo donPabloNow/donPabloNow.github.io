@@ -26,11 +26,11 @@ Kiron University, Awwwards...
 
 #Pages (8)
 
-https://donpablonow.github.io/
-https://obeyi.com/
-https://donpablonow.com/
-https://www.linkedin.com/in/donPablonow
-https://www.instagram.com/donpablonow/
-https://twitter.com/donPablonow/
-https://www.youtube.com/channel/UCaeVEkIfU9QoIgrlw9iKGjg
-https://github.com/donPabloNow/
+- https://donpablonow.github.io/
+- https://obeyi.com/
+- https://donpablonow.com/
+- https://www.linkedin.com/in/donPablonow
+- https://www.instagram.com/donpablonow/
+- https://twitter.com/donPablonow/
+- https://www.youtube.com/channel/UCaeVEkIfU9QoIgrlw9iKGjg
+- https://github.com/donPabloNow/
