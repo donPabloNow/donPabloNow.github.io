@@ -167,7 +167,7 @@
           href: "#",
           tabindex: "-1",
           title: a.tooltips.decrementHour
-        }).addClass("btn").attr("data-action", "decrementHours").append(e("<span>").addClass(a.icons.down))))), T("m") && (T("h") && (t.append(e("<td>").addClass("separator")), n.append(e("<td>").addClass("separator").html(":")), r.append(e("<td>").addClass("separator"))), t.append(e("<td>").append(e("<a>").attr({
+        }).addClass("btn").attr("data-action", "decrementHours").append(e("<span>").addClass(a.icons.down))))), T("m") && (T("h") && (t.append(e("<td>").addClass("separator")), n.append(e("<td>").addClass("separator")(":")), r.append(e("<td>").addClass("separator"))), t.append(e("<td>").append(e("<a>").attr({
           href: "#",
           tabindex: "-1",
           title: a.tooltips.incrementMinute
@@ -178,7 +178,7 @@
           href: "#",
           tabindex: "-1",
           title: a.tooltips.decrementMinute
-        }).addClass("btn").attr("data-action", "decrementMinutes").append(e("<span>").addClass(a.icons.down))))), T("s") && (T("m") && (t.append(e("<td>").addClass("separator")), n.append(e("<td>").addClass("separator").html(":")), r.append(e("<td>").addClass("separator"))), t.append(e("<td>").append(e("<a>").attr({
+        }).addClass("btn").attr("data-action", "decrementMinutes").append(e("<span>").addClass(a.icons.down))))), T("s") && (T("m") && (t.append(e("<td>").addClass("separator")), n.append(e("<td>").addClass("separator")(":")), r.append(e("<td>").addClass("separator"))), t.append(e("<td>").append(e("<a>").attr({
           href: "#",
           tabindex: "-1",
           title: a.tooltips.incrementSecond
@@ -316,7 +316,7 @@
           o = i.clone().add(6, "y"),
           s = "";
         for (t.eq(0).find("span").attr("title", a.tooltips.prevDecade), t.eq(1).attr("title", a.tooltips.selectDecade), t.eq(2).find("span").attr("title", a.tooltips.nextDecade), e.find(".disabled").removeClass("disabled"), a.minDate && a.minDate.isAfter(n, "y") && t.eq(0).addClass("disabled"), t.eq(1).text(n.year() + "-" + o.year()), a.maxDate && a.maxDate.isBefore(o, "y") && t.eq(2).addClass("disabled"); !n.isAfter(o, "y");) s += '<span data-action="selectYear" class="year' + (n.isSame(r, "y") && !u ? " active" : "") + (N(n, "y") ? "" : " disabled") + '">' + n.year() + "</span>", n.add(1, "y");
-        e.find("td").html(s)
+        e.find("td")(s)
       },
       Q = function() {
         var e, n = h.find(".datepicker-decades"),
@@ -334,7 +334,7 @@
           })) || a.minDate && a.minDate.isAfter(s, "y")) && o.eq(0).addClass("disabled"), o.eq(1).text(s.year() + "-" + d.year()), (s.isSame(t({
             y: 2e3
           })) || a.maxDate && a.maxDate.isBefore(d, "y")) && o.eq(2).addClass("disabled"); !s.isAfter(d, "y");) e = s.year() + 12, p = a.minDate && a.minDate.isAfter(s, "y") && a.minDate.year() <= e, c = a.maxDate && a.maxDate.isAfter(s, "y") && a.maxDate.year() <= e, u += '<span data-action="selectDecade" class="decade' + (r.isAfter(s) && r.year() <= e ? " active" : "") + (N(s, "y") || p || c ? "" : " disabled") + '" data-selection="' + (s.year() + 6) + '">' + (s.year() + 1) + " - " + (s.year() + 12) + "</span>", s.add(12, "y");
-        u += "<span></span><span></span><span></span>", n.find("td").html(u), o.eq(1).text(l.year() + 1 + "-" + s.year())
+        u += "<span></span><span></span><span></span>", n.find("td")(u), o.eq(1).text(l.year() + 1 + "-" + s.year())
       },
       U = function() {
         var t, n, o, s = h.find(".datepicker-days"),

@@ -514,9 +514,9 @@
 
     if (template !== '') { //if there is a template
       template = template.replace('{total}', total);
-      $(this.element).html(template);
+      $(this.element)(template);
     } else { //template by defaults
-      $(this.element).html(
+      $(this.element)(
         '<div class="box"><a class="count" href="#">' + total + '</a>' +
         (this.options.title !== '' ? '<a class="share" href="#">' + this.options.title + '</a>' : '') +
         '</div>'
@@ -581,8 +581,8 @@
   /* Methode for add +1 to a counter
   ================================================== */
   Plugin.prototype.simulateClick = function() {
-    var html = $(this.element).html();
-    $(this.element).html(html.replace(this.options.total, this.options.total + 1));
+    var html = $(this.element)();
+    $(this.element)(html.replace(this.options.total, this.options.total + 1));
   };
 
   /* Methode for add +1 to a counter

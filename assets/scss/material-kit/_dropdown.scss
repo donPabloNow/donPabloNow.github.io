@@ -1,5 +1,5 @@
-// Menus https://www.google.com/design/spec/components/menus.html#menus-specs
-// Dropdown buttons (mobile and desktop) https://www.google.com/design/spec/components/buttons.html#buttons-dropdown-buttons
+// Menus https://www.google.com/design/spec/components/menus#menus-specs
+// Dropdown buttons (mobile and desktop) https://www.google.com/design/spec/components/buttons#buttons-dropdown-buttons
 
 .dropdown {
   &:after{
@@ -85,7 +85,7 @@
     }
 
 
-  // https://www.google.com/design/spec/components/menus.html#menus-specs
+  // https://www.google.com/design/spec/components/menus#menus-specs
   .dropdown-item,
   li > a{    // used to properly size the ripple container
     position: relative;

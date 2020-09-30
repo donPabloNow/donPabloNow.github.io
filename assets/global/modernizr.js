@@ -452,7 +452,7 @@ window.Modernizr = (function(window, document, undefined) {
    *
    * I also test for Firefox 4 Multitouch Support.
    *
-   * For more info, see: modernizr.github.com/Modernizr/touch.html
+   * For more info, see: modernizr.github.com/Modernizr/touch
    */
 
   tests['touch'] = function() {
@@ -724,7 +724,7 @@ window.Modernizr = (function(window, document, undefined) {
   // e.g.  Modernizr.video     // true
   //       Modernizr.video.ogg // 'probably'
   //
-  // Codec values from : github.com/NielsLeenheer/html5test/blob/9106a8/index.html#L845
+  // Codec values from : github.com/NielsLeenheer/html5test/blob/9106a8/index#L845
   //                     thx to NielsLeenheer and zcorpan
 
   // Note: in some older browsers, "no" was a return value instead of empty string.
@@ -789,7 +789,7 @@ window.Modernizr = (function(window, document, undefined) {
   // Because I am a forced to try/catch this, we'll go aggressive.
 
   // Just FWIW: IE8 Compat mode supports these features completely:
-  //   www.quirksmode.org/dom/html5.html
+  //   www.quirksmode.org/dom/html5
   // But IE8 doesn't support either with local files
 
   tests['localstorage'] = function() {
@@ -859,8 +859,8 @@ window.Modernizr = (function(window, document, undefined) {
     // We're using f which is the <input> element created early on
     // Mike Taylr has created a comprehensive resource for testing these attributes
     //   when applied to all input types:
-    //   miketaylr.com/code/input-type-attr.html
-    // spec: www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element.html#input-type-attr-summary
+    //   miketaylr.com/code/input-type-attr
+    // spec: www.whatwg.org/specs/web-apps/current-work/multipage/the-input-element#input-type-attr-summary
 
     // Only input placeholder is tested while textarea's placeholder is not.
     // Currently Safari 4 and Opera 11 have support only for the input placeholder
@@ -872,7 +872,7 @@ window.Modernizr = (function(window, document, undefined) {
       if (attrs.list) {
         // safari false positive's on datalist: webk.it/74252
         // see also github.com/Modernizr/Modernizr/issues/146
-        attrs.list = !!(document.createElement('datalist') && window.HTMLDataListElement);
+        attrs.list = !!(document.createElement('datalist') && windowDataListElement);
       }
       return attrs;
     })('autocomplete autofocus list placeholder max min multiple pattern required step'.split(' '));
@@ -1020,7 +1020,7 @@ window.Modernizr = (function(window, document, undefined) {
     var version = '3.7.0';
 
     /** Preset options */
-    var options = window.html5 || {};
+    var options = window5 || {};
 
     /** Used to skip problem elements */
     var reSkip = /^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i;
@@ -1306,7 +1306,7 @@ window.Modernizr = (function(window, document, undefined) {
     /*--------------------------------------------------------------------------*/
 
     // expose html5
-    window.html5 = html5;
+    window5 = html5;
 
     // shiv the document
     shivDocument(document);

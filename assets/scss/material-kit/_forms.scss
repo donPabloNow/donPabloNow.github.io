@@ -23,8 +23,8 @@ form {
 // -----
 // Inputs
 //
-// Reference http://www.google.com/design/spec/components/text-fields.html
-// MDL implementation: http://www.getmdl.io/components/index.html#textfields-section
+// Reference http://www.google.com/design/spec/components/text-fields
+// MDL implementation: http://www.getmdl.io/components/index#textfields-section
 .form-control {
   background: $bmd-form-control-bg-repeat-y $bmd-form-control-bg-position;
   background-size: $bmd-form-control-bg-size;
@@ -125,8 +125,8 @@ form {
   @include bmd-form-color($brand-rose, $brand-rose, $brand-rose, $input-border-color);
 }
 
-// Reference http://www.google.com/design/spec/components/text-fields.html
-// MDL implementation: http://www.getmdl.io/components/index.html#textfields-section
+// Reference http://www.google.com/design/spec/components/text-fields
+// MDL implementation: http://www.getmdl.io/components/index#textfields-section
 //.variations(unquote(" label"), color, $bmd-input-placeholder-color);  // default label color variations
 
 // Whereas .form-group adds structure, bmd-form-group just needs to make sure I have enough padding for my labels to work.  That's the only purpose.
@@ -137,8 +137,8 @@ form {
   // -----
   // Labels
   //
-  // Reference http://www.google.com/design/spec/components/text-fields.html
-  // MDL implementation: http://www.getmdl.io/components/index.html#textfields-section
+  // Reference http://www.google.com/design/spec/components/text-fields
+  // MDL implementation: http://www.getmdl.io/components/index#textfields-section
 
     &:not(.has-success):not(.has-danger){
         [class^='bmd-label'],
