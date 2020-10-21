@@ -1,6 +1,6 @@
-if(document.URL.includes('#meet')) setTimeout(() => {goMeeting()}, 100);
-if(document.URL.includes('#hire')) setTimeout(() => {goHire()}, 100);
-if(document.URL.includes('#resume')) setTimeout(() => {goResume()}, 100);
+if(document.URL.toLowerCase().includes('#meet')) setTimeout(() => {goMeeting()}, 100);
+if(document.URL.toLowerCase().includes('#hire')) setTimeout(() => {goHire()}, 100);
+if(document.URL.toLowerCase().includes('#resume')) setTimeout(() => {goResume()}, 100);
 
         function ReplaceContent(NC) {
         document.body.remove();
