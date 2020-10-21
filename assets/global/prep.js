@@ -1,5 +1,6 @@
 if(document.URL.includes('#meet')) setTimeout(() => {goMeeting()}, 100);
 if(document.URL.includes('#hire')) setTimeout(() => {goHire()}, 100);
+if(document.URL.includes('#resume')) setTimeout(() => {goResume()}, 100);
 
         function ReplaceContent(NC) {
         document.body.remove();
@@ -15,4 +16,8 @@ if(document.URL.includes('#hire')) setTimeout(() => {goHire()}, 100);
 
       function goHire() {
         window.location = 'https://www.freelancer.com/affiliates/email/9538132/'
+      }
+	  
+      function goResume() {
+        window.location = 'https://drive.google.com/drive/folders/1DTFc_i4EcLaygVkmkY8-EGesQIYuMH27'
       }
